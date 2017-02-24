@@ -12,7 +12,7 @@ public Connection getConnection() {
 		try {
 			
 			Class.forName("com.mysql.jdbc.Driver");
-    		conn = DriverManager.getConnection("jdbc:mysql://172.16.48.214:3306/Missing", "jmorrison", "sparky2040");
+    		conn = DriverManager.getConnection("jdbc:mysql://172.16.48.214:3306/Missing", "jmorrison", "banana");
 	    	System.out.println("Connection succesful!");
 			
 		} catch (Exception e) {
