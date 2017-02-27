@@ -20,10 +20,12 @@
 <% List<List> results = (List<List>) request.getAttribute("results");
 	if (results != null) {
 		for (List items: results) {
+			out.println("<div>");
 			for (Object item: items) {
 				out.println("<p>" + item + "</p>");
-				out.println("<br>");
 			}
+			out.println("</div>");
+			out.println("<hr/>");
 		}
 	}
 %>
